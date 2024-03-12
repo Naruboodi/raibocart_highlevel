@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>raibo_msgs</name>
+  <version>1.0.0</version>
+  <description>
+    RAIBO MESSAGE:  This package is using for rostopic as message type
+                    for RAIBO CART
+  </description>
+  <maintainer email="james.ttpts@gmail.com">Thitipong T.</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>std_msgs</depend>
+  <build_export_depend>message_runtime</build_export_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+</package>

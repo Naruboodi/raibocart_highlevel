@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="node_start_delay" default ="3.0" />
+
+<node pkg="octomap_server" type="octomap_server_node" name="octomap_server" >
+    <param name="resolution" value="0.4" />
+    <param name="frame_id" type="string" value="/world" />
+    
+    <param name="sensor_model/max_range" value="100" />
+    
+    <remap from="cloud_in" to="/cloud_pcd" />
+</node>
+
+
+<node pkg = "pcl_ros" type = "pcd_to_pointcloud" name = "show_pointcloud" args = "/home/aims/stack1708365441851506.pcd 1 _frame_id:=/world" output="screen"  launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+
+
+
+</launch>
+

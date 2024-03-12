@@ -1,0 +1,8 @@
+float64 bldc_rpm_sp
+float64 bldc_rpm_fb
+float64 bldc_mps_fb
+float64 bldc_kmph_fb
+float64 steering_angle_sp
+float64 steering_angular_fb
+float64 steering_rpm_fb
+bool    forward_motor

@@ -1,0 +1,2 @@
+string name
+int16 distance_from_init

@@ -1,0 +1,11 @@
+<launch>
+
+  <arg name="urdf_file" default="$(find xacro)/xacro --inorder '$(find raibo_urdf)/urdf/raibocart.urdf.xacro'" />
+    <param name="robot_description" command="$(arg urdf_file)" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+        <param name="publish_frequency" type="double" value="50.0" />
+        <param name="tf_prefix" value=""/>
+    </node>
+
+</launch>

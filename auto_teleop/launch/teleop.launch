@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="auto_teleop_node" pkg="auto_teleop" type="teleop.py" output="screen"/>
+
+</launch>

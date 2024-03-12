@@ -1,0 +1,10 @@
+<launch>
+	<node pkg="point_cloud_converter" name="point_cloud_converter" type="point_cloud_converter_node" >
+		<!-- <remap from="points_in" to="/combind_point_cloud1"/>
+		<remap from="points2_out" to="/combind_point_cloud1" /> -->
+		
+		<remap from="points2_in" to="/combind_point_cloud"/>
+		<remap from="points_out" to="/combind_point_cloud1" />
+		
+	</node>
+</launch>
